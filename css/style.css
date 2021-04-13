@@ -71,6 +71,8 @@ main div img {
 }
 
 main div article {
+    width: 47%;
+    float: right;
     position: relative;
 }
 
@@ -83,9 +85,6 @@ main div article h3 {
 main div article p {
     font-size: large;
     text-align: justify;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scroll-behavior: smooth;
     font-size: x-large;
 }
 
@@ -94,7 +93,7 @@ main div article div {
     position: absolute;
     margin-top: 5px;
     top: 100%;
-    right: 43%;
+    left: 0;
     color: #ffffff;
     padding: 10px 20px;
     text-align: center;
