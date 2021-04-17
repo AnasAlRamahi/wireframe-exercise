@@ -48,6 +48,9 @@ main img {
 main section {
     width: 100%;
     padding: 30px 0px 30px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 main section img {
@@ -63,18 +66,29 @@ main section img:first-child {
     padding-left: 0;
 }
 
+#imgParagraphDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 main div img {
-    float: left;
+    /* float: left; */
     width: 50%;
+    height: 50%;
     padding-right: 30px;
     padding-bottom: 30px;
 }
 
 main div article {
-    width: 47%;
-    float: right;
+    width: 45%;
+    /* height: 300px; */
+    /* overflow: hidden; */
+    background-color: white;
     position: relative;
 }
+
+
 
 main div article h3 {
     font-size: xx-large;
@@ -88,16 +102,15 @@ main div article p {
     font-size: x-large;
 }
 
-main div article div {
+#button {
     background-color: #000000;  
-    position: absolute;
     margin-top: 5px;
-    top: 100%;
-    left: 0;
     color: #ffffff;
     padding: 10px 20px;
     text-align: center;
     font-size: large;
+    width: 150px;
+    cursor: pointer;
 }
 
 footer {
@@ -105,4 +118,10 @@ footer {
     height: 200px;
     clear: both;
     background-color: #444444;
+}
+
+#paragraph {
+    height: 550px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
